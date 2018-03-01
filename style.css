@@ -343,6 +343,10 @@ letter-spacing: 0.08em;
   .flex-titulo h2 {
     display: none;
   }
+  .flex-texto {
+    margin-bottom: 30px;
+  }
+  
   .flex-texto h3 span.cafe {
     display: none;
   }
