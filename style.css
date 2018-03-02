@@ -160,6 +160,7 @@ body {
 /*STYLE RESUME*/
 img.ogimage {
   display: none;
+  visibility: hidden;
 }
 /*header*/
 .header {
