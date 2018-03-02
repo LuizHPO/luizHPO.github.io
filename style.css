@@ -158,6 +158,9 @@ body {
 }
 
 /*STYLE RESUME*/
+img.ogimage {
+  display: none;
+}
 /*header*/
 .header {
   position: fixed;
@@ -251,6 +254,7 @@ body {
   opacity: 0;
   transition: ease 0.7s;
   text-align: center;
+  white-space: nowrap;
 }
 
 .portfolio-img figcaption.ativo {
@@ -343,7 +347,8 @@ body {
   top: 5px;
   transform: translate(0, 0);
   opacity: 1;
-}
+  white-space: normal;
+}  
   .portfolio-img figcaption h4 {
     display: none;
   }

@@ -1,7 +1,7 @@
 //FULLPAGE
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		anchors:['firstPage', 'secondPage', 'thirdPage'], paddingBottom: '20px',navigation: true, menu: '.header'
+		anchors:['firstPage', 'secondPage', 'thirdPage'], paddingBottom: '30px',navigation: true, menu: '.header'
 	});
 });
 
