@@ -43,6 +43,7 @@ span.color {
   height: 100vh;
   background: url(img/bg.jpeg) no-repeat no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
@@ -95,7 +96,7 @@ span.color {
   line-height: 1em;
 }
 
-.texto-home a::before {
+.texto-home p::before {
   content: '';
   display: block;
   height: 2px;
@@ -104,16 +105,16 @@ span.color {
   margin: 10px 0 20px auto;
 }
 
-.texto-home a {
+.texto-home p {
   font-size: 1.25em;
   text-align: right;
   margin-right: 100px;
   color: #ff4c48;
-  display: block;
   letter-spacing: 0.1rem;
 }
 /*PORQUE*/
 .porque {
+  background: #eee;
   padding: 60px 0;
   height: 100vh;
   display: flex;
@@ -139,6 +140,14 @@ span.color {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+}
+
+.porque .container > p {
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
+  color: rgba(0,0,0,.6);
+  padding: 0 40px;
 }
 
 .porque-conteudo > div {
@@ -185,6 +194,7 @@ span.color {
 .porquem > div h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.5em;
+  padding-left: 10px;
 }
 
 .porquem .right {
@@ -259,10 +269,12 @@ span.color {
   .porque {
     height: auto;
   }
-  
+  .porque h2 {
+    padding-left: 20px;
+  }
   .porquem .container {
   flex-direction: column;
-}
+  }
   .porquem h2 {
     display: none;
   }
@@ -275,6 +287,9 @@ span.color {
   .porquem .right ul {
   flex-wrap: wrap;
 }
+  
+  
+  
 }
 
 
