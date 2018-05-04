@@ -1,97 +1,98 @@
 <html>
+
 <head>
   <meta charset="UTF-8">
-  <title>Luiz de Paula - Web Designer</title>
+  <title>Quanto tempo falta pra COPA 2018</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <meta property = "og:type" content = "website">
-  <meta property = "og:title" content = "Luiz dePaula | Front End ">
-  <meta name = "description" content = "Front-end de Londrina-PR disponivel para novos projetos">  
-  <meta property = "og:description" content = "Front-end de Londrina-PR - disponivel para novos projetos - Entre em contato!">
-  <meta property = "og:site_name" content = "Luiz de Paula">
-  <meta name = "keywords" content = "Luiz, de Paula, design,design grafico, designer, graphic design, developer, web, web dev, front-end , Londrina">
-  <meta property="og:url" content="http://luizhpo.github.io/"/>
-  <meta property="og:image" content="https://luizhpo.github.io/og-image.JPG"/>
-  
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,400|Open+Sans:400,400i" rel="stylesheet">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Luiz dePaula | Front End ">
+  <meta name="description" content="Front-end de Londrina-PR disponivel para novos projetos">
+  <meta property="og:description" content="Front-end de Londrina-PR - disponivel para novos projetos - Entre em contato!">
+  <meta property="og:site_name" content="Luiz de Paula">
+  <meta name="keywords" content="Luiz, de Paula, design,design grafico, designer, graphic design, developer, web, web dev, front-end , Londrina">
+  <meta property="og:url" content="http://luizhpo.github.io/" />
+  <meta property="og:image" content="https://luizhpo.github.io/og-image.JPG" />
+
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date('Jun 14, 2018 12:00:00').getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+      // Get todays date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById('demo').innerHTML =
+        '<li><span class="garantir">' +
+        days +
+        '</span>' +
+        'Dias </li>' +
+        '<li><span class="garantir">' +
+        hours +
+        '</span>' +
+        'Horas </li>' +
+        '<li><span class="garantir">' +
+        minutes +
+        '</span>' +
+        'Minutos </li>' +
+        '<li><span class="garantir">' +
+        seconds +
+        '</span>' +
+        'Segundos </li>';
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById('demo').innerHTML = 'EXPIRADO';
+      }
+    }, 1000);
+  </script>
+  <style>
+    body {
+      background: url('ney.jpg') no-repeat center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    ul {
+      padding: 0px;
+      padding-bottom: 350px;
+    }
+
+    li {
+      display: inline-block;
+      padding: 10px;
+      font-size: 2.25em;
+    }
+
+    .garantir {
+      padding-right: 10px;
+    }
+  </style>
 </head>
+
 <body>
-  <section class="home" id="home">
-    <header class="header">
-      <nav class="menu">
-        <ul>
-          <li><a href="#home">home</a></li>
-          <li><a href="#porque">por que?</a></li>
-          <li><a href="#porquem">por quem?</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="texto-home" id="home">
-    <h1>Precisa de um<br> website<span class="color">?</span></h1>
-    <p>Eu posso ajudar!</p>
-    </div>
-  </section>
+  <div>
+    <ul id="demo">
 
-  <section class="porque" id="porque">
-    <div class="container">
-     <h2>Por Que <span class="color">?</span></h2>
-      <div class="porque-conteudo">
-        <div>
-           <h3>Confiança</h3>
-           <p>Ter um bom site na internet significa ter seus produtos ou serviços divulgados a qualquer hora do dia ou da noite, todos os dias do ano.</p>
-           <p>Seus clientes em potencial podem acessar informações detalhadas, ver fotos, vídeos, gráficos e outros comparativos que os ajudem a tomar decisões favoráveis ao seu negócio.</p>  
-        </div>  
-        <div>
-            <h3>Amplitude</h3>
-            <p>Comparado com outras mídias, a internet é a que atinge com maior amplitude o mercado, com maior foco de interesse do público consumidor, transmitindo a maior quantidade de informação pelo menor investimento.</p>
-        </div>
-        <div>
-          <h3>Credibilidade</h3>
-          <p>Possibilita que sua empresa tenha maior credibilidade perante o seu público-alvo, garantindo que os clientes notem o seu esforço em possuir um relacionamento.</p>
-        </div>    
-      </div>
-      <p>Se num mundo onde as pessoas acreditam que uma empresa não existe sem um website, por quê você vai ficar de fora<span class="color">?</span> </p>
-    </div>
-  </section>
+    </ul>
+  </div>
 
-  <section class="porquem" id="porquem">
-    <div class="container">
-       <div>
-        <h2>P</h2>
-        <h2>o</h2>
-        <h2>r</h2>
-        <h2>Q</h2>
-        <h2>u</h2>
-        <h2>e</h2>
-        <h2>m</h2>
-        <h2><span class="color">?</span></h2>
-       </div>
-       
-      <div class="right">
-        <div>
-          <h3>Luiz de Paula</h3>
-          <p>Sou um front-end criativo, preocupado com UX & UI e disposto a aprender mais.</p>
-          <p>Sempre de olho na tipografia.</p>
-          <p>Adepto ao minimalismo porém versátil aos projetos.</p>
-          <p>Tenho conhecimentos em SEO que vão dar um up no seu site.</p>
-        </div>
-      
-        <div>
-          <h3>Contato <span class="cafe">Vamos tomar um café!</span></h3>
-          <p>luizh_@live.com</p>
-          <a href="tel:43984177306">(43) 9 84177306</a>
-          <ul>
-            <li><a href="https://www.linkedin.com/in/luizhpo/" target="_blank">Linkedin</a></li>
-            <li><a href="https://github.com/LuizHPO/" target="_blank">GitHub</a></li>
-            <li><a href="https://codepen.io/LuizHPO/" target="_blank">CodePen</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-<!--script-->
-  <script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="main.js"></script>
+
 </body>
+
 </html>
