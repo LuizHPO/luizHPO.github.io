@@ -1,56 +1,171 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="pt_BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Quanto tempo falta pra COPA 2018</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Veja quanto tempo falta no contador de dias para COPA DO MUNDO 2018">
+    <meta name="author" content="Luiz de Paula | Caio Takemura">
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Luiz dePaula | Front End ">
-  <meta name="description" content="Front-end de Londrina-PR disponivel para novos projetos">
-  <meta property="og:description" content="Front-end de Londrina-PR - disponivel para novos projetos - Entre em contato!">
-  <meta property="og:site_name" content="Luiz de Paula">
-  <meta name="keywords" content="Luiz, de Paula, design,design grafico, designer, graphic design, developer, web, web dev, front-end , Londrina">
-  <meta property="og:url" content="http://luizhpo.github.io/" />
-  <meta property="og:image" content="https://luizhpo.github.io/og-image.JPG" />
+    <title>Quantos dias pra Copa 2018?</title>
 
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script>
-    // Set the date we're counting down to
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        body {
+          background: url('fundo.png') no-repeat center center;
+          background-size: cover;
+          height: 100vh;
+          font-weight: bold;
+        }
+      .header{
+        background: url('1.png') no-repeat center center;
+        background-size: cover;
+        height: 220px;
+      }
+      .contador > div {
+        height: 400px;
+        color: white;
+      }
+      span {
+        font-size: 2em;
+        position: absolute;
+         color: black;
+        text-shadow: 2px 2px white;
+      }
+      .ney1 {
+        background: url('ney1.png') no-repeat center;
+        background-size: contain;
+      } 
+      .ney1 span {
+        color: white;
+        text-shadow: 2px 2px black;
+      }
+      .ney2 {
+        background: url('ney2.png') no-repeat center;
+        background-size: contain;
+      }  
+      .ney2 span{
+        position: absolute;
+        bottom: 25%;
+        left: 30%;
+      }
+      .ney3 {
+        background: url('ney3.png') no-repeat center;
+        background-size: contain;
+      }    
+      .ney3 span {
+        font-size: 1.6em;
+        bottom: 40%;
+      }
+      .ney4 {
+        background: url('ney4.png') no-repeat center;
+        background-size: contain;
+      }
+      .ney4 span {
+        bottom: 15%;
+        font-size: 1.625em;
+      }
+      .date {
+        font-size: 4em;
+        color: #1FC600;
+        text-shadow: 2px 2px black;
+      }
+      
+      .dias {
+        position: absolute;
+        top: 52%;
+      }   
+      .horas {
+        position: absolute;
+        top: 43%;
+        left: 31%;
+      }     
+      .minutos {
+        position: absolute;
+        top: 30%;
+      }      
+      .segundos {
+        position: absolute;
+        bottom: 25%;
+      }
+      
+      @media (max-width: 539px) {
+        .date {
+          font-size: 2.6em;
+        }
+        .horas {
+          top: 36%;
+          left: 25%;
+        }
+        .ney2 span {
+          bottom: 20%;
+          left: 20%;
+          font-size: 1.6em;
+        }
+        .minutos {
+          top: 25%;
+        }
+        .ney3 span {
+          bottom: 33%;
+          font-size: 1.4em;
+        }
+        .segundos {
+          bottom: 25%;
+        }
+        .ney4 span {
+          font-size: 1.4em;
+        }
+      }
+    </style>
+</head>
+<body>
+<header class="header">
+</header>
+<div class="contador container-fluid">
+ <div class="row">
+  <div id="ney1" class="ney1 col-sm-3 col-6 p-0 d-flex justify-content-center align-items-center"></div>
+  <div id="ney2" class="ney2 col-sm-3 col-6 p-0 d-flex justify-content-center align-items-center"></div>
+  <div id="ney3" class="ney3 col-sm-3 col-6 p-0 d-flex justify-content-center align-items-center"></div>
+  <div id="ney4" class="ney4 col-sm-3 col-6 p-0 d-flex justify-content-center align-items-center"></div>
+  </div>
+</div>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script>
     var countDownDate = new Date('Jun 14, 2018 12:00:00').getTime();
-
-    // Update the count down every 1 second
     var x = setInterval(function () {
-      // Get todays date and time
       var now = new Date().getTime();
-
-      // Find the distance between now an the count down date
       var distance = countDownDate - now;
 
-      // Time calculations for days, hours, minutes and seconds
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById('demo').innerHTML =
-        '<li><span class="garantir">' +
+      
+      document.getElementById('ney1').innerHTML =
+        '<div class="dias date">' +
         days +
-        '</span>' +
-        'Dias </li>' +
-        '<li><span class="garantir">' +
+        '</div>' +
+        '<span>Dias</span>';
+      document.getElementById('ney2').innerHTML =
+        '<div class="horas date">' +
         hours +
-        '</span>' +
-        'Horas </li>' +
-        '<li><span class="garantir">' +
+        '</div>' +
+        '<span>Horas</span>';      
+      document.getElementById('ney3').innerHTML =
+        '<div class="minutos date">' +
         minutes +
-        '</span>' +
-        'Minutos </li>' +
-        '<li><span class="garantir">' +
+        '</div>' +
+        '<span>Minutos</span>';      
+      document.getElementById('ney4').innerHTML =
+        '<div class="segundos date">' +
         seconds +
-        '</span>' +
-        'Segundos </li>';
+        '</div>' +
+        '<span>Segundos</span>';
 
       // If the count down is over, write some text
       if (distance < 0) {
@@ -59,52 +174,6 @@
       }
     }, 1000);
   </script>
-  <style>
-    body {
-      background: url('ney.jpg') no-repeat center;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 0px;
-      padding-bottom: 350px;
-    }
-
-    @media (max-width: 439px) {
-      ul {
-        padding-bottom: 100px;
-      }
-    }
-
-    li {
-      display: inline-block;
-      padding: 10px;
-      font-size: 2.25em;
-      color: #009B3A;
-    }
-
-    .garantir {
-      color: #ffdd00;
-      padding-right: 10px;
-    }
-  </style>
-</head>
-
-<body>
-  <div>
-    <ul id="demo">
-
-    </ul>
-  </div>
-
-
+    
 </body>
-
 </html>
